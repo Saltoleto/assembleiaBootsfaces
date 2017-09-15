@@ -1,0 +1,10 @@
+br\com\assembleia\util\Criptografia.class
+br\com\assembleia\service\CargoService.class
+br\com\assembleia\model\Usuario.class
+br\com\assembleia\model\Cargo.class
+br\com\assembleia\service\impl\CargoServiceImpl.class
+br\com\assembleia\controller\CargoControle.class
+br\com\assembleia\model\Autorizacao.class
+br\com\assembleia\dao\impl\CargoDAOImpl.class
+br\com\assembleia\controller\AplicacaoControle.class
+br\com\assembleia\dao\CargoDAO.class

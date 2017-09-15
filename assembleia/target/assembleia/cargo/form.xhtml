@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://java.sun.com/jsf/core"
+                template="#{pageContext.request.contextPath}/templates/template.xhtml"
+                xmlns:b="http://bootsfaces.net/ui"
+                xmlns:h="http://java.sun.com/jsf/html">
+    <f:metadata/>
+        <f:viewParam name="rel" value="#{cargoControle.titulo}"/>
+
+
+    <ui:define name="content">
+        <h:form>
+            <b:messages/>
+            <b:panel title="#{cargoControle.titulo}" collapsible="false" look="info">
+                <b:inputText value="#{cargoControle.cargo.descricao}" label="#{msgs['descricao']}" required="true" required-message="#{msgs['informe.descricao']}"/>
+                <b:commandButton  action="#{cargoControle.salvar()}" class="pull-right" look="success" value="#{msgs['btn.salvar']}"/>
+                <b:commandButton  action="#{cargoControle.voltar()}" immediate="true" class="pull-right" look="warning" value="#{msgs['btn.cancelar']}"/>
+            </b:panel>
+        </h:form>
+    </ui:define>
+</ui:composition>
